@@ -21,31 +21,28 @@ cljs-thoughtbot/x ;; => also 1
 (let [x 2]
   cljs-thoughtbot/x) ;; => 1
 
-;; DEF vs. DEFN:
-;; One way to define a function is like this:
+  ;; DEF vs. DEFN:
+  ;; One way to define a function is like this:
 
-(def y (fn [] 4))
+  (def y (fn [] 4))
 
-(y) ;; => 4
+  (y) ;; => 4
 
-;; This is longhand for the more idiomatic DEFN:
+  ;; This is longhand for the more idiomatic DEFN:
 
-(defn z [] 5)
+  (defn z [] 5)
 
-(z) ;; => 5
+  (z) ;; => 5
 
-;; Map stuff (the data structure):
+  ;; Map stuff (the data structure):
 
-(def some-map {:first-key "first value" :first-number 12})
+  (def some-map {:first-key "first value" :first-number 12})
 
-some-map ;; {:first-key "first value", :first-number 12}
+  some-map ;; {:first-key "first value", :first-number 12}
 
-;; Functions that work on maps...
+  ;; Functions that work on maps...
 
-;; COUNT returns the number of keys:
+  ;; COUNT returns the number of keys:
 
-(count some-map) ;; 2
-
-
-
+  (count some-map) ;; 2
 
